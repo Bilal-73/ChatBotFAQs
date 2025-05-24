@@ -1,0 +1,90 @@
+[
+  {
+    "question": "What is your return policy?",
+    "answer": "Our return policy lasts 30 days. If 30 days have gone by since your purchase, unfortunately we can’t offer a refund or exchange."
+  },
+  {
+    "question": "Can I return an item after 30 days?",
+    "answer": "Unfortunately, items cannot be returned after 30 days."
+  },
+  {
+    "question": "How do I return a product?",
+    "answer": "To return a product, contact support and follow the return instructions provided."
+  },
+  {
+    "question": "Do you ship internationally?",
+    "answer": "Yes, we offer international shipping to most countries."
+  },
+  {
+    "question": "What are the shipping charges?",
+    "answer": "Shipping charges vary depending on your location and order size."
+  },
+  {
+    "question": "How long does delivery take?",
+    "answer": "Delivery typically takes 3–7 business days locally and 7–15 days internationally."
+  },
+  {
+    "question": "How can I contact support?",
+    "answer": "You can reach our support team at support@example.com or through our contact form."
+  },
+  {
+    "question": "Is support available 24/7?",
+    "answer": "Our support team is available Monday to Friday from 9am to 6pm."
+  },
+  {
+    "question": "Can I speak to a live agent?",
+    "answer": "Live agents are available during business hours via chat or phone support."
+  },
+  {
+    "question": "What payment methods are accepted?",
+    "answer": "We accept credit/debit cards, PayPal, and other major payment gateways."
+  },
+  {
+    "question": "Is it safe to pay online?",
+    "answer": "Yes, all transactions are encrypted and processed through secure payment systems."
+  },
+  {
+    "question": "Do you offer cash on delivery?",
+    "answer": "Cash on delivery is available for select locations only."
+  },
+  {
+    "question": "Can I track my order?",
+    "answer": "Yes, once your order ships, you'll receive a tracking link via email."
+  },
+  {
+    "question": "Do you offer discounts or promo codes?",
+    "answer": "Yes, we frequently offer promotions. Subscribe to our newsletter to stay updated."
+  },
+  {
+    "question": "Where can I find more information about a product?",
+    "answer": "Product details are available on each product's page. You can also contact support for specific queries."
+  },
+  {
+    "question": "Hello",
+    "answer": "Hi there! How can I assist you today?"
+  },
+  {
+    "question": "Hi",
+    "answer": "Hello! How can I help you?"
+  },
+  {
+    "question": "Hey",
+    "answer": "Hey! Feel free to ask any question."
+  },
+  {
+    "question": "Goodbye",
+    "answer": "Goodbye! Have a great day!"
+  },
+  {
+    "question": "Bye",
+    "answer": "Bye! Let me know if you need anything else."
+  },
+  {
+    "question": "Thank you",
+    "answer": "You're welcome! Let me know if there's anything else I can do."
+  },
+  {
+    "question": "Thanks",
+    "answer": "Anytime! 😊"
+  }
+]

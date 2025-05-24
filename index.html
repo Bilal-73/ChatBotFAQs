@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FAQ Chatbot</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1;
+    }
+    .chatbox {
+      width: 400px;
+      margin: 100px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px gray;
+    }
+    #chatlog {
+      height: 300px;
+      overflow-y: scroll;
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    .user-msg {
+      text-align: right;
+      color: blue;
+      margin: 5px;
+    }
+    .bot-msg {
+      text-align: left;
+      color: green;
+      margin: 5px;
+    }
+    #userInput {
+      width: 100%;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="chatbox">
+    <h2 style="text-align:center;">🤖 FAQ Chatbot</h2>
+    <div id="chatlog"></div>
+    <input type="text" id="userInput" placeholder="Ask a question..." onkeydown="if(event.key === 'Enter') sendMsg()">
+  </div>
+
+  <script>
+    function sendMsg() {
+      let msg = document.getElementById("userInput").value;
+      let chatlog = document.getElementById("chatlog");
+
+      if (!msg.trim()) return;
+
+      chatlog.innerHTML += `<div class='user-msg'>You: ${msg}</div>`;
+      document.getElementById("userInput").value = "";
+
+      fetch("/get", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: `msg=${encodeURIComponent(msg)}`
+      })
+      .then(response => response.json())
+      .then(data => {
+        chatlog.innerHTML += `<div class='bot-msg'>Bot: ${data.reply}</div>`;
+        chatlog.scrollTop = chatlog.scrollHeight;
+      })
+      .catch(err => {
+        chatlog.innerHTML += `<div class='bot-msg'>Bot: Sorry, there was an error.</div>`;
+        chatlog.scrollTop = chatlog.scrollHeight;
+      });
+    }
+  </script>
+</body>
+</html>
